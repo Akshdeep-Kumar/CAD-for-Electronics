@@ -1,0 +1,7 @@
+* source E1
+R_R1         N00237 N00176  10k  
+R_R2         N00163 N00251  1k  
+Q_Q1         N00163 N00176 0 Q2N2222
+V_V2         N00251 0 5Vdc
+V_V1         N00237 0  
++PULSE 0V 5V 0 1n 1n 10u 20u

@@ -1,0 +1,6 @@
+* source E2
+M_M1         N00231 N00227 0 0 MbreakN           
+R_R1         N00231 N00240  200k  
+R_R2         N00223 N00227  100  
+V_V2         N00240 0 20Vdc
+V_V1         N00223 0 20Vdc

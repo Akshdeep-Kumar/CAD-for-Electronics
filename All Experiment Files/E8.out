@@ -1,0 +1,300 @@
+
+**** 05/13/24 16:37:30 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ * CMOS Transmission Gate Design and Transient Analysis
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+.MODEL N_180n NMOS    LEVEL   = 7
++VERSION = 3.1            TNOM    = 27             TOX     = 4.1E-9
++XJ      = 1E-7           NCH     = 2.3549E17      VTH0    = 0.354505
++K1      = 0.5733393      K2      = 3.177172E-3    K3      = 27.3563303
++K3B     = -10            W0      = 2.341477E-5    NLX     = 1.906617E-7
++DVT0W   = 0              DVT1W   = 0              DVT2W   = 0
++DVT0    = 1.6751718      DVT1    = 0.4282625      DVT2    = 0.036004
++U0      = 327.3736992    UA      = -4.52726E-11   UB      = 4.46532E-19
++UC      = -4.74051E-11   VSAT    = 8.785346E4     A0      = 1.6897405
++AGS     = 0.2908676      B0      = -8.224961E-9   B1      = -1E-7
++KETA    = 0.021238       A1      = 8.00349E-4     A2      = 1
++RDSW    = 105            PRWG    = 0.5            PRWB    = -0.2
++WR      = 1              WINT    = 0              LINT    = 1.351737E-8
+*+XL      = -2E-8          XW      = -1E-8         
++ DWG     = 1.610448E-9
++DWB     = -5.108595E-9   VOFF    = -0.0652968     NFACTOR = 2.4901845
++CIT     = 0              CDSC    = 2.4E-4         CDSCD   = 0
++CDSCB   = 0              ETA0    = 0.0231564      ETAB    = -0.058499
++DSUB    = 0.9467118      PCLM    = 0.8512348      PDIBLC1 = 0.0929526
++PDIBLC2 = 0.01           PDIBLCB = -0.1           DROUT   = 0.5224026
++PSCBE1  = 7.979323E10    PSCBE2  = 1.522921E-9    PVAG    = 0.01
++DELTA   = 0.01           RSH     = 6.8            MOBMOD  = 1
++PRT     = 0              UTE     = -1.5           KT1     = -0.11
++KT1L    = 0              KT2     = 0.022          UA1     = 4.31E-9
++UB1     = -7.61E-18      UC1     = -5.6E-11       AT      = 3.3E4
++WL      = 0              WLN     = 1              WW      = 0
++WWN     = 1              WWL     = 0              LL      = 0
++LLN     = 1              LW      = 0              LWN     = 1
++LWL     = 0              CAPMOD  = 2              XPART   = 0.5
++CGDO    = 7.7E-10        CGSO    = 7.7E-10        CGBO    = 1E-12
++CJ      = 1.010083E-3    PB      = 0.7344298      MJ      = 0.3565066
++CJSW    = 2.441707E-10   PBSW    = 0.8005503      MJSW    = 0.1327842
++CJSWG   = 3.3E-10        PBSWG   = 0.8005503      MJSWG   = 0.1327842
++CF      = 0              PVTH0   = 1.307195E-3    PRDSW   = -5
++PK2     = -1.022757E-3   WKETA   = -4.466285E-4   LKETA   = -9.715157E-3
++PU0     = 12.2704847     PUA     = 4.421816E-11   PUB     = 0
++PVSAT   = 1.707461E3     PETA0   = 1E-4           PKETA   = 2.348777E-3
+
+
+.MODEL P_180n PMOS    LEVEL   = 7
++VERSION = 3.1            TNOM    = 27             TOX     = 4.1E-9
++XJ      = 1E-7           NCH     = 4.1589E17      VTH0    = -0.4120614
++K1      = 0.5590154      K2      = 0.0353896      K3      = 0
++K3B     = 7.3774572      W0      = 1E-6           NLX     = 1.103367E-7
++DVT0W   = 0              DVT1W   = 0              DVT2W   = 0
++DVT0    = 0.4301522      DVT1    = 0.2156888      DVT2    = 0.1
++U0      = 128.7704538    UA      = 1.908676E-9    UB      = 1.686179E-21
++UC      = -9.31329E-11   VSAT    = 1.658944E5     A0      = 1.6076505
++AGS     = 0.3740519      B0      = 1.711294E-6    B1      = 4.946873E-6
++KETA    = 0.0210951      A1      = 0.0244939      A2      = 1
++RDSW    = 127.0442882    PRWG    = 0.5            PRWB    = -0.5
++WR      = 1              WINT    = 5.428484E-10   LINT    = 2.468805E-8
+*+XL      = -2E-8          XW      = -1E-8          
++DWG     = -2.453074E-8
++DWB     = 6.408778E-9    VOFF    = -0.0974174     NFACTOR = 1.9740447
++CIT     = 0              CDSC    = 2.4E-4         CDSCD   = 0
++CDSCB   = 0              ETA0    = 0.1847491      ETAB    = -0.2531172
++DSUB    = 1.5            PCLM    = 4.8842961      PDIBLC1 = 0.0156227
++PDIBLC2 = 0.1            PDIBLCB = -1E-3          DROUT   = 0
++PSCBE1  = 1.733878E9     PSCBE2  = 5.002842E-10   PVAG    = 15
++DELTA   = 0.01           RSH     = 7.7            MOBMOD  = 1
++PRT     = 0              UTE     = -1.5           KT1     = -0.11
++KT1L    = 0              KT2     = 0.022          UA1     = 4.31E-9
++UB1     = -7.61E-18      UC1     = -5.6E-11       AT      = 3.3E4
++WL      = 0              WLN     = 1              WW      = 0
++WWN     = 1              WWL     = 0              LL      = 0
++LLN     = 1              LW      = 0              LWN     = 1
++LWL     = 0              CAPMOD  = 2              XPART   = 0.5
++CGDO    = 7.11E-10       CGSO    = 7.11E-10       CGBO    = 1E-12
++CJ      = 1.179334E-3    PB      = 0.8545261      MJ      = 0.4117753
++CJSW    = 2.215877E-10   PBSW    = 0.6162997      MJSW    = 0.2678074
++CJSWG   = 4.22E-10       PBSWG   = 0.6162997      MJSWG   = 0.2678074
++CF      = 0              PVTH0   = 2.283319E-3    PRDSW   = 5.6431992
++PK2     = 2.813503E-3    WKETA   = 2.438158E-3    LKETA   = -0.0116078
++PU0     = -2.2514581     PUA     = -7.62392E-11   PUB     = 4.502298E-24
++PVSAT   = -50            PETA0   = 1E-4           PKETA   = -1.047892E-4
+
+* Define circuit parameters
+.PARAM Vdd=5
+.PARAM inputPulseHigh=5
+.PARAM inputPulseLow=0
+
+* Voltage sources
+Vdd vdd 0 DC {Vdd}
+Vin in 0 PULSE({inputPulseLow} {inputPulseHigh} 10ns 1ns 1ns 10ns 20ns)
+Vctrl ctrl 0 PULSE(0 {Vdd} 5ns 1ns 1ns 10ns 20ns)
+
+* Transmission Gate using NMOS and PMOS
+Mn1 out in ctrl 0 N_180n W=1u L=180n
+Mp1 out in ctrl vdd P_180n W=1u L=180n
+
+* Output Load
+Cload out 0 10pF
+
+* Analysis directives
+.TRAN 1ns 100ns
+.PROBE
+
+.END
+
+WARNING(ORPSIM-15235): Mosfet Mn1, model N_180n: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mn1, model N_180n: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mp1, model P_180n: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mp1, model P_180n: Ps = 0 is less than W
+
+INFO(ORPSIM-15454): Model N_180n: Using BSIM VERSION 3.1 or lower
+
+INFO(ORPSIM-15454): Model P_180n: Using BSIM VERSION 3.1 or lower
+
+**** 05/13/24 16:37:30 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ * CMOS Transmission Gate Design and Transient Analysis
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               N_180n          P_180n          
+               NMOS            PMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .354505        -.412061     
+          KP  505.338100E-06  505.338100E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+         RSH    6.8             7.7          
+          IS    1.000000E-15    1.000000E-15 
+          JS  100.000000E-06  100.000000E-06 
+          PB     .73443          .854526     
+        PBSW     .80055          .6163       
+          CJ    1.010083E-03    1.179334E-03 
+        CJSW  244.170700E-12  221.587700E-12 
+          MJ     .356507         .411775     
+        MJSW     .132784         .267807     
+        CGSO  770.000000E-12  711.000000E-12 
+        CGDO  770.000000E-12  711.000000E-12 
+        CGBO    1.000000E-12    1.000000E-12 
+         TOX    4.100000E-09    4.100000E-09 
+          XJ  100.000000E-09  100.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA     .01             .01         
+      DIOMOD    2               2            
+          K1     .573339         .559015     
+          K2    3.177172E-03     .03539      
+        LETA    0               0            
+        WETA    0               0            
+          U0  327.3737        128.7705       
+       XPART     .5              .5          
+        VTH0     .354505        -.412061     
+          K3   27.35633         0            
+          W0   23.414770E-06    1.000000E-06 
+         NLX  190.661700E-09  110.336700E-09 
+        DVT0    1.675172         .430152     
+        DVT1     .428263         .215689     
+          UA  -45.272600E-12    1.908676E-09 
+          UB  446.532000E-21    1.686179E-21 
+          UC  -47.405100E-12  -93.132900E-12 
+        VSAT   87.853460E+03  165.894400E+03 
+        RDSW  105             127.0443       
+        VOFF    -.065297        -.097417     
+     NFACTOR    2.490185        1.974045     
+        PCLM     .851235        4.884296     
+      PDIBL1     .092953         .015623     
+      PDIBL2     .01             .1          
+       DROUT     .522403        0            
+      PSCBE1   79.793230E+09    1.733878E+09 
+      PSCBE2    1.522921E-09  500.284200E-12 
+          A0    1.689741        1.607651     
+          A1  800.349000E-06     .024494     
+          A2    1               1            
+       NPEAK  235.490000E+15  415.890000E+15 
+         LDD    0               0            
+        LITL   35.071360E-09   35.071360E-09 
+         UA1    4.310000E-09    4.310000E-09 
+         UB1   -7.610000E-18   -7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG     .01           15            
+        KETA     .021238         .021095     
+        ETA0     .023156         .184749     
+        ETAB    -.058499        -.253117     
+         K3B  -10               7.377457     
+        DVT2     .036004         .1          
+        DSUB     .946712        1.5          
+      MOBMOD    1               1            
+         AGS     .290868         .374052     
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG     .5              .5          
+        PRWB    -.2             -.5          
+     PDIBLCB    -.1            -1.000000E-03 
+         DWG    1.610448E-09  -24.530740E-09 
+         DWB   -5.108595E-09    6.408778E-09 
+          B0   -8.224961E-09    1.711294E-06 
+          B1 -100.000000E-09    4.946873E-06 
+        LINT   13.517370E-09   24.688050E-09 
+        WINT                  542.848400E-12 
+         DLC   13.517370E-09   24.688050E-09 
+         DWC    0             542.848400E-12 
+          CF    0               0            
+        NOIA  100.000000E+18    9.900000E+18 
+        NOIB   50.000000E+03    2.400000E+03 
+        NOIC   -1.400000E-12    1.400000E-12 
+       LKETA   -9.715157E-03    -.011608     
+       WKETA -446.628500E-06    2.438158E-03 
+       PVSAT    1.707461E+03  -50            
+       PKETA    2.348777E-03 -104.789200E-06 
+       PVTH0    1.307195E-03    2.283319E-03 
+         PUA   44.218160E-12  -76.239200E-12 
+         PUB                    4.502298E-24 
+         PU0   12.27048        -2.251458     
+       PRDSW   -5               5.643199     
+       PETA0  100.000000E-06  100.000000E-06 
+         PK2   -1.022757E-03    2.813503E-03 
+         VTM     .025864         .025864     
+     VERSION    3.1             3.1          
+       PBSWG     .80055          .6163       
+       MJSWG     .132784         .267807     
+       CJSWG  330.000000E-12  422.000000E-12 
+
+
+WARNING(ORPSIM-15235): Mosfet Mn1, model N_180n: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mn1, model N_180n: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mp1, model P_180n: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet Mp1, model P_180n: Ps = 0 is less than W
+
+**** 05/13/24 16:37:30 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ * CMOS Transmission Gate Design and Transient Analysis
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   in)    0.0000  (  out)     .6699  (  vdd)    5.0000  ( ctrl)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    Vdd         -9.350E-12
+    Vin          0.000E+00
+    Vctrl        8.670E-12
+
+    TOTAL POWER DISSIPATION   4.68E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/13/24 16:37:30 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ * CMOS Transmission Gate Design and Transient Analysis
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .63
+

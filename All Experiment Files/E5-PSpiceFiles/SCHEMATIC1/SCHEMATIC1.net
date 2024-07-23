@@ -1,0 +1,9 @@
+* source E5
+M_M1         N00260 N00281 0 0 MbreakN           
+M_M2         N00260 N00288 0 0 MbreakN           
+V_V1         N00281 0  
++PULSE 0 5 1m 1u 1u 2m 4m
+V_V2         N00288 0  
++PULSE 0 5 2m 1u 1u 2m 4m
+V_V3         N00274 0 5Vdc
+R_R1         N00260 N00274  100k TC=0,0 

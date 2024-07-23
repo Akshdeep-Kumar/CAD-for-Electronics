@@ -1,0 +1,8 @@
+.ALIASES
+M_M1            M1(d=N00322 g=N00308 s=N00228 b=N00228 ) CN @E3.SCHEMATIC1(sch_1):INS96@BREAKOUT.MbreakP.Normal(chips)
+M_M2            M2(d=N00322 g=N00308 s=0 b=0 ) CN @E3.SCHEMATIC1(sch_1):INS208@BREAKOUT.MbreakN.Normal(chips)
+R_R1            R1(1=N00228 2=N00351 ) CN @E3.SCHEMATIC1(sch_1):INS251@ANALOG.R.Normal(chips)
+R_R2            R2(1=N00471 2=N00308 ) CN @E3.SCHEMATIC1(sch_1):INS267@ANALOG.R.Normal(chips)
+V_V1            V1(+=N00351 -=0 ) CN @E3.SCHEMATIC1(sch_1):INS292@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N00471 -=0 ) CN @E3.SCHEMATIC1(sch_1):INS1100@SOURCE.VDC.Normal(chips)
+.ENDALIASES

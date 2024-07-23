@@ -1,0 +1,7 @@
+.ALIASES
+R_R1            R1(1=N00237 2=N00176 ) CN @E1.SCHEMATIC1(sch_1):INS88@FILTSUB.R.Normal(chips)
+R_R2            R2(1=N00163 2=N00251 ) CN @E1.SCHEMATIC1(sch_1):INS104@FILTSUB.R.Normal(chips)
+Q_Q1            Q1(c=N00163 b=N00176 e=0 ) CN @E1.SCHEMATIC1(sch_1):INS131@BIPOLAR.Q2N2222.Normal(chips)
+V_V2            V2(+=N00251 -=0 ) CN @E1.SCHEMATIC1(sch_1):INS221@SOURCE.VDC.Normal(chips)
+V_V1            V1(+=N00237 -=0 ) CN @E1.SCHEMATIC1(sch_1):INS334@SOURCE.VPULSE.Normal(chips)
+.ENDALIASES

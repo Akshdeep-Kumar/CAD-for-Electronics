@@ -1,0 +1,9 @@
+* source E4
+M_M1         N00258 N00308 N00123 N00123 MbreakP           
+M_M2         N00258 N00301 N00123 N00123 MbreakP           
+M_M3         N00123 N00308 N00165 N00165 MbreakN           
+M_M4         N00165 N00301 0 0 MbreakN           
+R_R1         N00258 N00315  100k TC=0,0 
+V_V1         N00315 0 5Vdc
+V_V2         N00301 0 5Vdc
+V_V3         N00308 0 5Vdc

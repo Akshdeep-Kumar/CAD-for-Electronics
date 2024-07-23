@@ -1,0 +1,107 @@
+
+**** 05/13/24 00:50:56 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\akshd\Documents\MAIN\Extras\CAD_Lab_self\E4-PSpiceFiles\SCHEMATIC1\transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\akshd\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 5 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source E4
+M_M1         N00258 N00308 N00123 N00123 MbreakP           
+M_M2         N00258 N00301 N00123 N00123 MbreakP           
+M_M3         N00123 N00308 N00165 N00165 MbreakN           
+M_M4         N00165 N00301 0 0 MbreakN           
+R_R1         N00258 N00315  100k TC=0,0 
+V_V1         N00315 0 5Vdc
+V_V2         N00301 0 5Vdc
+V_V3         N00308 0 5Vdc
+
+**** RESUMING transient.cir ****
+.END
+
+**** 05/13/24 00:50:56 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\akshd\Documents\MAIN\Extras\CAD_Lab_self\E4-PSpiceFiles\SCHEMATIC1\transient.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         MbreakN         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    0               0            
+          KP   20.000000E-06   20.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+
+          JOB CONCLUDED
+
+**** 05/13/24 00:50:56 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ C:\Users\akshd\Documents\MAIN\Extras\CAD_Lab_self\E4-PSpiceFiles\SCHEMATIC1\transient.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

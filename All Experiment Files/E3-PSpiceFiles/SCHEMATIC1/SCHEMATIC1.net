@@ -1,0 +1,9 @@
+* source E3
+M_M1         N00322 N00308 N00228 N00228 MbreakP  
++ L=10u  
++ W=180n         
+M_M2         N00322 N00308 0 0 MbreakN           
+R_R1         N00228 N00351  200k TC=0,0 
+R_R2         N00471 N00308  100 TC=0,0 
+V_V1         N00351 0 20Vdc
+V_V2         N00471 0 20Vdc
